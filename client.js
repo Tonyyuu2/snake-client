@@ -9,11 +9,14 @@ const connect = function () {
   
   conn.on('connect', () => {
     console.log("Successfully connected to game server");
+    conn.write("Name: DAD");
   });
 
-  conn.on('connect', () => {
-    conn.write("Name: TY")
-  })
+
+  // setTimeout(() => conn.on('connect', () => {
+  //   conn.write("Move: up")
+  // }), 50);
+  
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
