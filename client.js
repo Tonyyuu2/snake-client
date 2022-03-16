@@ -12,7 +12,7 @@ const connect = function () {
     conn.write("Name: DAD");
   });
 
-
+  
   // setTimeout(() => conn.on('connect', () => {
   //   conn.write("Move: up")
   // }), 50);
@@ -27,6 +27,8 @@ const connect = function () {
 
   return conn;
 };
+
+
 console.log("Connecting ...");
 
 module.exports = {
