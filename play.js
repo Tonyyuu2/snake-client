@@ -3,11 +3,9 @@ const {setupInput} = require('./input');
 
 const net = require("net");
 
-
 console.log("Connecting...");
-const conn = connect(); 
+const conn = connect(); // connect // connect()
 setupInput(conn);
-
 
 // connect() returns an object that can be used to interact with the server
 // the object returned by connect() should be passed into setupInput()

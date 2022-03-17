@@ -18,8 +18,17 @@ const handleUserInput = (key) => {
   if (key === 'd') {
     connection.write("Move: right")
   }; // connection now holds two variables
-};
-const setupInput = function (conn) { 
+  if (key === 'p') {
+    connection.write("Say: FOR MORDOR")
+  };
+  if (key === 'o') {
+    connection.write("Say: ONI--CHAN!")
+  };
+  if (key === 'i') {
+    connection.write("Say: HNNNNG~")
+  };
+};// connection refers to two things net.createCOnnection + setupInput 
+const setupInput = function (conn) { // referencing to the ACTUAL arguement on play.js
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
