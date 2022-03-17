@@ -19,7 +19,7 @@ const handleUserInput = (key) => {
     connection.write("Move: right")
   }; // connection now holds two variables
   if (key === 'p') {
-    connection.write("Say: FOR MORDOR")
+    connection.write("Say: I <3 Andy~!")
   };
   if (key === 'o') {
     connection.write("Say: ONI--CHAN!")
